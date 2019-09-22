@@ -4,7 +4,8 @@ title: Codes
 caption: Codes
 date: 2014-07-18
 
-img: img/code-is-cool.png
+img: img/coding-cat.gif
+img-placeholder: img/code-is-cool.png
 categories: []
 tags: []
 
