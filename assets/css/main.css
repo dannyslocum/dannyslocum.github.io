@@ -100,6 +100,7 @@ body {
     left: 0;
 	z-index: -1;
     text-align: left;
+    -webkit-backface-visibility: hidden;
 }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -471,6 +472,7 @@ footer .footer-below {
     bottom: 2%;
     width: 50px;
     height: 50px;
+    -webkit-backface-visibility: hidden;
 }
 
 .scroll-top .btn {
@@ -1895,6 +1897,7 @@ footer .footer-below {
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
+		-webkit-backface-visibility: hidden;
 	}
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
@@ -1910,7 +1913,8 @@ footer .footer-below {
 
 	html.is-touch {
 		height: 100vh;
-		overflow: hidden;
+		overflow-x: hidden;
+        overflow-y: auto;
 	}
 
 		html.is-touch #wrapper {
@@ -1918,7 +1922,8 @@ footer .footer-below {
 			-webkit-overflow-scrolling: touch;
 			-webkit-transform: translate3d(0, 0, 0);
 			height: 100vh;
-			overflow: auto;
+			overflow-x: hidden;
+            overflow-y: auto;
 		}
 
 	body, input, select, textarea {
@@ -2381,6 +2386,7 @@ footer .footer-below {
 			top: 50%;
 			width: 2em;
 			z-index: -1;
+			-webkit-backface-visibility: hidden;
 		}
 
 		html body:after {
@@ -2398,6 +2404,7 @@ footer .footer-below {
 			top: 0;
 			width: 100%;
 			z-index: -1;
+			-webkit-backface-visibility: hidden;
 		}
 
 	html.is-loading body:before {
@@ -3165,6 +3172,7 @@ footer .footer-below {
 		top: 0;
 		width: 100%;
 		z-index: -1;
+		-webkit-backface-visibility: hidden;
 	}
 
 		.main-bg.active {
