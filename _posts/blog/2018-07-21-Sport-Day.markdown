@@ -5,7 +5,6 @@ caption: This picture was from sports day!
 date: 2014-07-18
 
 img: img/2018-07-02 19.17.40.jpg
-alt: This picture was from sports day!
 categories: []
 tags: []
 

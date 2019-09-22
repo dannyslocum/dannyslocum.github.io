@@ -18,7 +18,11 @@
 									<h6>{{ post.caption }}</h6>
 								</div>
 							</div>
-							<img src="/assets/img/{{ post.img }}" alt="{{ post.alt }}">
+    						{% if post.img-placeholder %}
+							<img src="/assets/img/{{ post.img }}" alt="{{ post.caption }}">
+							{% else %}
+							<img class="lazy" src="/assets/img/{{ post.img-placeholder }}" data-src="/assets/img/{{ post.img }}" alt="{{ post.caption }}">
+							{% endif %}
 							<h3 class="adjustableFont text-center" style="background: rgba({{ site.color.secondary-rgb }}, 0.8)">{{ post.title }}</h3>
 						</a>
 					</div>
