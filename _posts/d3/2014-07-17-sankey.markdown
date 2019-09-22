@@ -29,7 +29,7 @@ description:
 		color = d3.scaleOrdinal(d3.schemePaired);
 
 	// append the svg object to the body of the page
-	var svg = d3.select("body")
+	var svg = d3.select("#visual")
 	  .append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)

@@ -25,7 +25,7 @@ description:
 		width = window.innerWidth - margin.left - margin.right,
 		height = window.innerHeight - margin.top - margin.bottom,
 		locations = [],
-		top_layer = d3.select("body").append("div")
+		top_layer = d3.select("#visual").append("div")
 			.attr("id", "map")
 			.style("position", "relative")
 			.style("width", width + "px")

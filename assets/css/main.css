@@ -380,12 +380,11 @@ section.success {
 .floating-label-form-group textarea {
     z-index: 1;
     position: relative;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 1em;
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
-    background: 0 0;
+    background: rgba(144, 144, 144, 0.15);
     box-shadow: none!important;
     resize: none;
 }

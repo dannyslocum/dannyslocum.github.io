@@ -31,7 +31,7 @@ description:
 		.interpolate(d3.interpolateHcl);
 
 	// append the svg object to the body of the page
-	var div = d3.select("body").append("div");
+	var div = d3.select("#visual").append("div");
 	var svg = div.append("svg")
 				.attr("width", width + margin.left + margin.right)
 				.attr("height", height + margin.top + margin.bottom);
