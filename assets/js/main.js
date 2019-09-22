@@ -112,6 +112,7 @@
 
 				var $this = $(this),
 					$primaryImg = $this.find('.image.primary > img'),
+					$src = $primaryImg.attr('data-src') || $primaryImg.attr('src'),
 					$bg,
 					options;
 
@@ -123,7 +124,7 @@
 					if (skel.vars.IEVersion < 9) {
 
 						$this
-							.css('background-image', 'url("' + $primaryImg.attr('src') + '")')
+							.css('background-image', 'url("' + $src + '")')
 							.css('-ms-behavior', 'url("assets/css/ie/backgroundsize.min.htc")');
 
 						return;
@@ -133,7 +134,7 @@
 				// Create bg and append it to body.
 					$bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
 						.css('background-image', (
-							'url("assets/css/images/overlay.png"), url("' + $primaryImg.attr('src') + '")'
+							'url("assets/css/images/overlay.png"), url("' + $src + '")'
 						))
 						.appendTo($body);
 
