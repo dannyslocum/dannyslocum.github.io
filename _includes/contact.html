@@ -12,11 +12,13 @@
                     <div class="col-lg-8 offset-lg-2">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                         <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm"/>>
                             <div class="row control-group">
                                 <div class="form-group col-12 floating-label-form-group controls">
                                     <label>Name</label>
-                                    <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name."/>
+                                    <input type="text" id="_gotcha" style="display:none" />
+                                    <input type="text" id="key" value="Ag3#ctsll0" style="display:none"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -45,7 +47,7 @@
                             <div id="success"></div>
                             <div class="row">
                                 <div class="form-group mx-auto">
-                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                    <button type="submit" class="btn btn-success btn-lg" style="color: white !important;">Send</button>
                                 </div>
                             </div>
                         </form>
