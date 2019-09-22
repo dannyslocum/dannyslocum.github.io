@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include head.html %}
+	</head>
+    <body id="page-top" class="index">
+		{% include navbar.html %}
+		<div class="container">
+			{% include post_head.html %}
+			{{ content }}
+		</div>
+		{% include footer.html %}
+		{% include js.html %}
+    </body>
+</html>

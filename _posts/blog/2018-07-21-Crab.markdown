@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Maryland Crab
+caption: Crab CNC cutout with artistic stain.
+date: 2014-07-18
+
+img: img/woodworking/crab/2018-12-19 17.16.42.jpg
+categories: []
+tags: []
+
+---
+
+Time lapse of the CNC cutout.
+
+<video width="400px" style="text-align: center; margin: auto;">
+<source src="/assets/img/img/woodworking/crab/2018-12-16 17.57.59.mov">
+</>

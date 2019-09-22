@@ -1,0 +1,70 @@
+---
+layout: visual
+title: D3 + Leaflet
+caption: 
+date: 2014-07-18
+
+img: portfolio/leaflet-d3.PNG
+css: /assets/css/leaflet.css
+data: /assets/data/map-points.json
+categories: [d3]
+tags: [d3]
+
+description: 
+---
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script type="text/javascript">
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+		width = window.innerWidth - margin.left - margin.right,
+		height = window.innerHeight - margin.top - margin.bottom,
+		top_layer = d3.select("body").append("div")
+			.attr("id", "map")
+			.style("position", "relative")
+			.style("width", width + "px")
+			.style("height", height + "px");
+
+	var map = L.map('map', { zoomControl: false }).setView([-41.2858, 174.7868], 13),
+//	var map = L.map('map', { center: [10.0, 5.0], minZoom: 2, zoom: 2 }),
+		map_url = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+		
+	new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);		
+	L.tileLayer( map_url, {
+			attribution: '&copy; ' + mapLink + ' Contributors',
+			maxZoom: 18,
+		}).addTo(map);
+
+	map._initPathRoot();
+
+	var svg = d3.select("#map").select("svg"),
+		g = svg.append("g");
+		
+	d3.json("{{ page.data }}").then(function(collection) {
+		collection.objects.forEach(function(d) { d.LatLng = new L.LatLng( d.circle.coordinates[0], d.circle.coordinates[1] ); })
+		
+		var feature = g.selectAll("circle")
+			.data(collection.objects)
+			.enter().append("circle")
+				.style("stroke", "black")  
+				.style("opacity", .6) 
+				.style("fill", "red")
+				.attr("r", 20);  
+		
+		map.on("viewreset", update);
+		update();
+
+		function update() {
+			feature.attr("transform", function(d) { 
+				return "translate("+ map.latLngToLayerPoint(d.LatLng).x + "," + map.latLngToLayerPoint(d.LatLng).y + ")"; 
+			});
+		}
+	});	 
+
+</script>
