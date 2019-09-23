@@ -4,7 +4,7 @@ title: CNC Machine Setup
 caption: Setup and initial testing for CNC machine
 date: 2018-12-18
 
-img: /assets/img/header.gif
+img: header.gif
 categories: []
 tags: []
 
