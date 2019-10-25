@@ -7,7 +7,9 @@
 		                <ul class="icons">
                             {% for network in site.social %}
                             <li>
-                                <a href="{{ network.url }}" class="btn-social" target="_blank"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                                <a href="{{ network.url }}" class="btn-social" target="_blank">
+                                    <i class="fa fa-fw fa-{{ network.title }}"></i>
+                                </a>
                             </li>
 		                    {% endfor %}
                         </ul>

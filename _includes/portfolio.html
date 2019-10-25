@@ -7,22 +7,59 @@
 		<div class="content">
 			<header class="major pb-5">
 				<h2>Portfolio</h2>
+				<p class="pt-5">
+					Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
 			</header>
 			<div class="row">
-				{% for post in site.posts %}
-					<div class="col-sm-6 col-lg-4 portfolio-item">
-						<a href="{{ post.url }}" class="portfolio-link">
-							<div class="caption" style="background: rgba({{ site.color.secondary-rgb }},.8);">
-								<div class="caption-content">
-									<i class="fa fa-search-plus fa-3x"></i>
-									<h6>{{ post.caption }}</h6>
-								</div>
+				<div class="mb-3 col-md-6 col-lg-4">
+					<div class="card-content">
+						<div class="card-img">
+							<img class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/img/coding-cat.gif">
+							<div class="bg-white" style="margin-top: -50px;">
+								<i style="border: 10px solid white; border-radius:100%; background: white; width: 100px;" class="fa-4x fa fa-code-fork"></i>
 							</div>
-							<img src="/assets/img/{{ post.img }}" alt="{{ post.alt }}">
-							<h3 class="adjustableFont text-center" style="background: rgba({{ site.color.secondary-rgb }}, 0.8)">{{ post.title }}</h3>
-						</a>
+						</div>
+						<div class="card-desc">
+							<h3>Data Science</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+								voluptas totam</p>
+								<a href="/posts#Data%20Science" class="btn-card">Read</a>
+						</div>
 					</div>
-				{% endfor %}
+				</div>
+				<div class="mb-3 col-md-6 col-lg-4">
+					<div class="card-content">
+						<div class="card-img">
+							<img class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/header.gif">
+							<div class="bg-white" style="margin-top: -50px;">
+								<i style="border: 10px solid white; border-radius:100%; background: white" class="fa-4x fa fa-cubes"></i>
+							</div>
+						</div>
+						<div class="card-desc">
+							<h3>Builds</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+								voluptas totam</p>
+								<a href="/posts#Builds" class="btn-card">Read</a>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
+					<div class="card-content">
+						<div class="card-img">
+							<img class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/D3ForceDirected.gif">
+							<div class="bg-white" style="margin-top: -50px;">
+								<i style="border: 10px solid white; border-radius:100%; background: white" class="fa-4x fa fa-tachometer"></i>
+							</div>
+						</div>
+						<div class="card-desc">
+							<h3>Visualizations</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+								voluptas totam</p>
+								<a href="/posts#Visualizations" class="btn-card">Read</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -7,7 +7,7 @@ date: 2014-07-18
 img: portfolio/leaflet-d3.PNG
 css: /assets/css/leaflet.css
 data: /assets/data/map-points.json
-categories: [d3]
+categories: [Visualizations]
 tags: [d3]
 
 description: 

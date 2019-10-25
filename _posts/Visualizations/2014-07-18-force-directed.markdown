@@ -7,7 +7,7 @@ date: 2014-07-18
 img: portfolio/force-directed.PNG
 css: /assets/css/force-directed.css
 data: /assets/data/miserables.json
-categories: [d3]
+categories: [Visualizations]
 tags: [d3]
 
 description: 

@@ -5,13 +5,13 @@ caption: Crab CNC cutout with artistic stain.
 date: 2014-07-18
 
 img: img/woodworking/crab/2018-12-19 17.16.42.jpg
-categories: []
-tags: []
+categories: [Builds]
+tags: [CNC]
 
 ---
 
 Time lapse of the CNC cutout.
 
 <video width="400px" style="text-align: center; margin: auto;">
-<source src="/assets/img/img/woodworking/crab/2018-12-16 17.57.59.mov">
-</>
+<source class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/img/woodworking/crab/2018-12-16 17.57.59.mov">
+</video>

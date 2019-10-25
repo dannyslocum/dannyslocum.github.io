@@ -6,8 +6,8 @@ date: 2014-07-18
 
 img: img/coding-cat.gif
 img-placeholder: img/code-is-cool.png
-categories: []
-tags: []
+categories: [Data Science]
+tags: [Fantasy Football]
 
 description: 
 ---
@@ -21,6 +21,6 @@ This is a test to see if the code highlighting works with highlights.js and the 
     </code>
 </pre>
 
-<img src="/assets/img/{{ page.img-placeholder }}">
+<img class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/{{ page.img-placeholder }}">
 
 ^ Did it work?

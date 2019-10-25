@@ -7,7 +7,7 @@ date: 2014-07-18
 img: portfolio/circle-packing.PNG
 css: /assets/css/circle-packing.css
 data: /assets/data/flare.json
-categories: [d3]
+categories: [Visualizations]
 tags: [d3]
 
 description: 
