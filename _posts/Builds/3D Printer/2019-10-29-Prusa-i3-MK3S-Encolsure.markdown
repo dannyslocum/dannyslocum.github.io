@@ -4,7 +4,7 @@ title: Prusa 3D Printer
 caption: 3D Printer setup
 date: 2018-12-18
 
-img: _3D_Printer_Setup/3d-printer.jpg
+img: 3D_Printer_Setup/3d-printer.jpg
 categories: [Builds]
 tags: [3D Printer]
 
@@ -14,7 +14,7 @@ description:
 Intro paragraph
 
 <video width="400px" style="text-align: center; margin: auto;">
-    <source class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/posts/_3D_Printer_Setup/3d-printer.mov">
+    <source class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/posts/3D_Printer_Setup/3d-printer.mov">
 </video>
 
 ### Materials and tools:

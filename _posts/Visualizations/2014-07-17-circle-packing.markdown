@@ -4,7 +4,7 @@ title: D3 Circle Packing
 caption:
 date: 2014-07-18
 
-img: _Circle_Packing/circle-packing.PNG
+img: Circle_Packing/circle-packing.PNG
 css: /assets/css/circle-packing.css
 data: /assets/data/flare.json
 categories: [Visualizations]

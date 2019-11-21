@@ -4,7 +4,7 @@ title: Prusa 3D Printer
 caption: 3D Printer setup
 date: 2018-12-18
 
-img: _3D_Printer_Setup/3d-printer.jpg
+img: 3D_Printer_Setup/3d-printer.jpg
 categories: [Builds]
 tags: [3D Printer]
 
@@ -14,7 +14,7 @@ description:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nullam non nisi est sit. Eget nunc scelerisque viverra mauris in aliquam. Interdum varius sit amet mattis. Morbi tristique senectus et netus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Scelerisque varius morbi enim nunc faucibus a. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Tristique senectus et netus et malesuada fames ac. Sit amet justo donec enim diam vulputate. Platea dictumst vestibulum rhoncus est pellentesque elit.
 
 <video width="400px" style="text-align: center; margin: auto;">
-    <source class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/posts/_3D_Printer_Setup/3d-printer.jpg">
+    <source class="lazy" src="/assets/img/placeholder.png" data-src="/assets/img/posts/3D_Printer_Setup/3d-printer.jpg">
 </video>
 
 Nec nam aliquam sem et tortor consequat id. Malesuada fames ac turpis egestas maecenas pharetra convallis. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Et malesuada fames ac turpis egestas sed. Ac turpis egestas integer eget. Feugiat vivamus at augue eget arcu dictum varius. Pharetra sit amet aliquam id diam maecenas. Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Lectus proin nibh nisl condimentum id venenatis a condimentum. Adipiscing at in tellus integer feugiat. Ultrices neque ornare aenean euismod elementum nisi quis. Consequat nisl vel pretium lectus quam. Quis enim lobortis scelerisque fermentum dui faucibus.

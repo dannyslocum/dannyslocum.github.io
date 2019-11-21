@@ -4,7 +4,7 @@ title: D3 Force Directed
 caption: Risus commodo viverra maecenas accumsan lacus vel facilisis. Suscipit adipiscing bibendum estultricies integer quis auctor elit sed.
 date: 2014-07-18
 
-img: _Force_Directed/force-directed.PNG
+img: Force_Directed/force-directed.PNG
 css: /assets/css/force-directed.css
 data: /assets/data/miserables.json
 categories: [Visualizations]
