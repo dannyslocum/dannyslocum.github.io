@@ -4,7 +4,7 @@ title: Leaflet Heatmap
 caption:
 date: 2014-07-18
 
-img: portfolio/leaflet-cluster.PNG
+img: Leaflet_Cluster/leaflet-cluster.PNG
 css: /assets/css/leaflet.css
 data: /assets/data/map-points.json
 categories: [Visualizations]

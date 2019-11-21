@@ -4,7 +4,7 @@ title: D3 Sankey
 caption: 
 date: 2014-07-18
 
-img: portfolio/sankey.PNG
+img: _Sankey/sankey.PNG
 css: /assets/css/sankey.css
 data: /assets/data/energy.json
 categories: [Visualizations]

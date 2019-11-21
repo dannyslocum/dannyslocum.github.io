@@ -10,7 +10,10 @@
 .details-card {
 	background: #ecf0f1;
 }
-
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
 .card-content {
 	background: #ffffff;
 	border: 4px;
@@ -2014,7 +2017,7 @@ footer .footer-below {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("/assets/img/overlay.png"), url("/assets/img/home_abstract.png");
+		background-image: url("/assets/img/overlay.png"), url("/assets/img/home/home.png");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2852,7 +2855,7 @@ footer .footer-below {
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
+			background: url("/assets/img/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
