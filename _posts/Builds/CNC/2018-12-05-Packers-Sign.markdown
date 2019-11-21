@@ -1,7 +1,7 @@
 ---
 layout: blog
-title: Birch Wood Packers Sign (from Raster Image)
-caption: Using raster images from the web, I created and carved out a replicated model of Wisconsin and the Packers logo. This was then filled with a white epoxy on the packers 'G' to mimic the logo and give it a unique look. These steps can be easily replicated on you're own logos or images.
+title: Wood Packers Sign (w/ Epoxy Infill)
+caption: Using raster images from the web, I created and carved out a replicated model of Wisconsin and the Packers logo. This was then filled with a white epoxy for the Packers 'G' to mimic the logo and give it a unique look. These steps can be easily replicated with a CNC machine on you're own logos or images.
 date: 2014-07-18
 
 img: Packers_Sign/finished_product.png
@@ -12,7 +12,7 @@ tags: [CNC]
 
 I recently completed a build for a friend of mine, which is a large Green Bay Packers / Wisconsin sign. I was able to create this with a simple raster image of the Packers logo plus an outline of Wisconsin, and the steps to do this are very easy to replicate. This was also the first time I used epoxy for one of my designs, and I think the end results came out really well. If you haven't used epoxy before, it's definitely worth trying out as a part of your projects!
 
-### Getting Started
+### 0. Getting Started
 ##### Materials:
 - 2x4 sheet of plywood
 - Yellow spray paint
@@ -38,18 +38,18 @@ I recently completed a build for a friend of mine, which is a large Green Bay Pa
 - Fusion 360 (or equivalent CAM software)
 - Inkscape (or equivalent raster -> vector software)
 
-### Create Design
+### 1. Create Design
 I first found a high contrast image of [Wisconsin](https://upload.wikimedia.org/wikipedia/en/6/68/Wisconsin_outline.JPG) and the [Green Bay Packers logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Green_Bay_Packers_logo.svg/1280px-Green_Bay_Packers_logo.svg.png). After copy and pasting these images into Inkscape, they can easily be converted into into vectorized images using the 'Trace bitmap...' feature (<kbd>Path</kbd> tab -> <kbd>Trace bitmap...</kbd>). This opens a sidebar for tweaking various trace settings. In this instance, I used the single scan Brightness cutoff" for the Wisconsin outline and the single scan "Color quantization" for the Packers logo. The brightness cutoff can be adjusted until it shows a quality output, but the color quantization will be more tricky. If you have a simple logo with a set number of colors, you should set the value to equal or less than the total colors in the image. With the Packers logo, I used the total color count of the logo (black, green, yellow, and white). If you have an image with no defined set of colors, this step can be a lot more difficult. You can still accomplish this step, but in a lot of cases the output won't be exactly what you want. 
 
 <div class="row">
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\wisconsin.png">
+        <img src="\assets\img\posts\Packers_Sign\wisconsin.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\wisconsin_traced.png">
+        <img src="\assets\img\posts\Packers_Sign\wisconsin_traced.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\both_traced.png">
+        <img src="\assets\img\posts\Packers_Sign\both_traced.png">
     </div>
 </div>
 
@@ -63,29 +63,29 @@ I used the basic Inkscape font in order to put text on the design. I chose "Sten
 
 <div class="row">
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\wisconsin_twoline.png">
+        <img src="\assets\img\posts\Packers_Sign\wisconsin_twoline.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\wisconsin_oneline.png">
+        <img src="\assets\img\posts\Packers_Sign\wisconsin_oneline.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\logo_adjusted.png">
+        <img src="\assets\img\posts\Packers_Sign\logo_adjusted.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\logo_overlay.png">
+        <img src="\assets\img\posts\Packers_Sign\logo_overlay.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\text_to_path.png">
+        <img src="\assets\img\posts\Packers_Sign\text_to_path.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\sign_inkscape.png">
+        <img src="\assets\img\posts\Packers_Sign\sign_inkscape.png">
     </div>
     <div style="text-align: center" class="my-3">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\vectorized_compared.png">
+        <img src="\assets\img\posts\Packers_Sign\vectorized_compare.png">
     </div>
 </div>
 
-### Generate Toolpaths
+### 2. Generate Toolpaths
 The first thing to do in Fusion 360 is inserting the _SVG_ (INSERT -> Insert SVG). And that's it! You can create a 3D model if you'd like to to test coloring and ensure you have the look you want, but manufacturing the part can be done all with this 2D model.
 
 Change the workspace from DESIGN to MANUFACTURE. First create a new setup, setting the X,Y,Z axis to the exact dimensions of your board. Adjust the 'Model Position' for the Z axis to ensure the 2D design is on the top of the stock. Change the Work Coordinate System to be one of the corners of your stock part as well to make setting the start position much easier when manufacturing the part.
@@ -100,43 +100,43 @@ The last thing to do is save these paths off as G-code by right clicking and sel
 
 <div class="row">
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\fusion_svg_import.png">
+        <img src="\assets\img\posts\Packers_Sign\fusion_svg_import.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\fusion_setup.png">
+        <img src="\assets\img\posts\Packers_Sign\fusion_setup.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\fusion_engrave.png">
+        <img src="\assets\img\posts\Packers_Sign\fusion_engrave.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\fusion_pocket.png">
+        <img src="\assets\img\posts\Packers_Sign\fusion_pocket.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\fusion_contour.png">
+        <img src="\assets\img\posts\Packers_Sign\fusion_contour.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\toolpath.gif">
+        <img src="\assets\img\posts\Packers_Sign\toolpath.gif">
     </div>
 </div>
 
-### Make the Cuts
+### 3. Make the Cuts
 We can finally cut out the design. I'm using the V1 Engineering Low Rider CNC Machine for mine (link provided above). I screw the board into my CNC table, insert my 45 degree bit, set the start position to where I had it in the Fusion 360 design, and start off the first engrave toolpath. Once complete, I switch bits and re-align the z-axis start position, and then start up the pocket and contour toolpath. Voila! I chiseled out the tabs and sanded the outer area smooth and cleaned up some imperfections in the engravings. Now onto the final touches.
 
 <div class="row">
     <div style="text-align: center" class="my-3 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\carve_engrave.gif">
+        <img src="\assets\img\posts\Packers_Sign\carve_engrave.gif">
     </div>
     <div style="text-align: center" class="my-3 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\cnc_after.png">
+        <img src="\assets\img\posts\Packers_Sign\cnc_after.png">
     </div>
 </div>
 
-### Finish the build
+### 4. Finish the build
 ##### Paint
 I tape the surrounding areas of the engravings to help when cleaning up the paint on top of the sign. By sanding the top of the piece after painting, it will leave just the paint inside the engravings. I went with a yellow paint to match the Packers colors (and because I had some extra on hand).
 <div class="row">
-    <div style="text-align: center" class="my-3">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\paint.png">
+    <div style="text-align: center" class="my-3 col-12">
+        <img src="\assets\img\posts\Packers_Sign\paint.png">
     </div>
 </div>
 
@@ -144,21 +144,21 @@ I tape the surrounding areas of the engravings to help when cleaning up the pain
 The next step was to mix the two part epoxy and fill in the 'G' (the materials I used can all be found in the list at the beginning of the post). Since this was my first time using epoxy in this way, I ran some tests before hand. I was debating between spray painting the 'G' with a white color while adding a clear epoxy to create some depth, or adding some epoxy powder to create a shiny focal point. The later appealed a little more to me so this was the option I stuck with. I didn't measure the amount of powder to an exact amount when mixing the epoxy, but I just added small increments until I got the opacity I was looking for. I used a butane torch to remove the bubbles in the epoxy for this case, but a heat gun or even a toothpick can be used here. The torch worked extremely well and quick in my case. I really like how this turned out. The epoxy has a very unique look to it and makes the 'G' really pop out. I'll be experimenting with epoxy a lot more in future builds. 
 <div class="row">
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\epoxy_start.png">
+        <img src="\assets\img\posts\Packers_Sign\epoxy_start.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\epoxy_after.png">
+        <img src="\assets\img\posts\Packers_Sign\epoxy_after.png">
     </div>
     <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\epoxy.gif">
+        <img src="\assets\img\posts\Packers_Sign\epoxy.gif">
     </div>
 </div>
 
 ##### Stain
 The top of the sign was a 2x4 foot birch wood, which I stained using a dark mahogany to help make the paint and epoxy even more. This was the easiest finishing step of the three. The only thing I had to do was ensure the stain stayed off of the epoxy and the engravings.
 <div class="row">
-    <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img class="lazy" src="\assets\img\placeholder.png" data_src="\assets\img\posts\Packers_Sign\finished_product.png">
+    <div style="text-align: center" class="my-3 col-12">
+        <img src="\assets\img\posts\Packers_Sign\finished_product.png">
     </div>
 </div>
 
