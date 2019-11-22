@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Prusa 3D Printer
+title: Custom Built 3D Printer Enclosure
 caption: 3D Printer setup
 date: 2018-12-18
 

@@ -143,14 +143,17 @@ I tape the surrounding areas of the engravings to help when cleaning up the pain
 ##### Epoxy
 The next step was to mix the two part epoxy and fill in the 'G' (the materials I used can all be found in the list at the beginning of the post). Since this was my first time using epoxy in this way, I ran some tests before hand. I was debating between spray painting the 'G' with a white color while adding a clear epoxy to create some depth, or adding some epoxy powder to create a shiny focal point. The later appealed a little more to me so this was the option I stuck with. I didn't measure the amount of powder to an exact amount when mixing the epoxy, but I just added small increments until I got the opacity I was looking for. I used a butane torch to remove the bubbles in the epoxy for this case, but a heat gun or even a toothpick can be used here. The torch worked extremely well and quick in my case. I really like how this turned out. The epoxy has a very unique look to it and makes the 'G' really pop out. I'll be experimenting with epoxy a lot more in future builds. 
 <div class="row">
-    <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img src="\assets\img\posts\Packers_Sign\epoxy_start.png">
+    <div style="text-align: center" class="my-3 col-md-6">
+        <div class="col-12">
+            <img src="\assets\img\posts\Packers_Sign\epoxy_start.png">
+        </div>
+        <br>
+        <div class="col-12">
+            <img src="\assets\img\posts\Packers_Sign\epoxy.gif">
+        </div>
     </div>
-    <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
+    <div style="text-align: center" class="my-3 col-md-6">
         <img src="\assets\img\posts\Packers_Sign\epoxy_after.png">
-    </div>
-    <div style="text-align: center" class="my-3 col-lg-4 col-md-6">
-        <img src="\assets\img\posts\Packers_Sign\epoxy.gif">
     </div>
 </div>
 
