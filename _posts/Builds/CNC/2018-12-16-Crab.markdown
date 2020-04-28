@@ -4,7 +4,7 @@ title: Maryland Crab
 caption: Crab CNC cutout with artistic stain.
 date: 2014-07-18
 
-img: Crab/2018-12-19 17.16.42.jpg
+img: Crab/crab.png
 categories: [Builds]
 tags: [CNC]
 
