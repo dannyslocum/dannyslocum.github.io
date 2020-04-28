@@ -1,20 +1,18 @@
 ---
 layout: blog
-title: Codes
-caption: Codes
+title: Grad School Layout
+caption: Grad School Caption
 date: 2014-07-18
 
 img: placeholder.png
 img-placeholder: img/code-is-cool.png
 categories: [Data Science]
-tags: [Computer Science]
+tags: [Fantasy Football]
 
 description: 
 ---
 
 <h2>Intro</h2>
-
-This is a test to see if the code highlighting works with highlights.js and the darcula theme.
 
 <pre>
     <code class="python">

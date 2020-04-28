@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Codes
+title: Grad School Layout
 caption: Codes
 date: 2014-07-18
 
